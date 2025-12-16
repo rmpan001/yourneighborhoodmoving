@@ -278,3 +278,105 @@ footer {
     margin-bottom: auto;
     padding-bottom: 1.5rem;
 }
+
+/* How Booking Works Section */
+.booking-steps {
+    padding: 5rem 0;
+    background-color: var(--surface);
+}
+
+.booking-steps-title {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.booking-steps-intro {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 1.125rem;
+    max-width: 500px;
+    margin: 0 auto 3.5rem;
+    line-height: 1.7;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.step-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    border-radius: var(--radius);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+.step-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--background);
+    color: var(--hero-bg);
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.step-card:hover .step-icon {
+    background-color: var(--hero-bg);
+    color: var(--background);
+}
+
+.step-number {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--hero-bg);
+    margin-bottom: 0.5rem;
+}
+
+.step-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+    font-weight: 400;
+}
+
+.step-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .booking-steps {
+        padding: 3.5rem 0;
+    }
+
+    .booking-steps-title {
+        font-size: 2rem;
+    }
+}
