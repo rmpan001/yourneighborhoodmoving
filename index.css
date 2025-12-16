@@ -69,6 +69,88 @@ body {
     transform: translateY(-1px);
 }
 
+/* Acuity-style button - matches the scheduling embed look */
+.acuity-embed-button {
+    background: var(--hero-bg) !important;
+    color: #fff !important;
+    padding: 0.75rem 1.5rem !important;
+    border: 0 !important;
+    box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset !important;
+    border-radius: 4px !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-family: var(--font-sans) !important;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+}
+
+.acuity-embed-button:hover {
+    background: #2d3b2b !important;
+    transform: translateY(-1px);
+}
+
+.acuity-embed-button:focus {
+    background: #2d3b2b !important;
+    outline: 2px solid var(--hero-bg) !important;
+    outline-offset: 2px !important;
+}
+
+.acuity-embed-button:active {
+    background: var(--hero-bg) !important;
+    transform: translateY(0);
+}
+
+/* Match Acuity style without triggering Acuity JS */
+.btn-acuity-style {
+    background: var(--hero-bg) !important;
+    color: #fff !important;
+    padding: 0.75rem 1.5rem !important;
+    border: 0 !important;
+    box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.15) inset !important;
+    border-radius: 4px !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-family: var(--font-sans) !important;
+    font-weight: 500 !important;
+    font-size: 1rem !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+}
+
+.btn-acuity-style:hover {
+    background: #2d3b2b !important;
+    transform: translateY(-1px);
+}
+
+.btn-acuity-style:focus {
+    background: #2d3b2b !important;
+    outline: 2px solid var(--hero-bg) !important;
+    outline-offset: 2px !important;
+}
+
+.btn-acuity-style:active {
+    background: var(--hero-bg) !important;
+    transform: translateY(0);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: translateY(-1px);
+}
+
 /* Layout */
 header {
     background-color: var(--background);
